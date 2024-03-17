@@ -4,112 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Chathurya-portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&,display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: rgb(1, 1, 33);
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: rgb(18, 18, 62);
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-        }
-
-        nav ul li a{
-            text-decoration: none;
-            color: white;
-        }
-
-        nav ul li a:hover{
-            color: rgb(198, 48, 103);
-            font-size: 1.02rem;
-        }
-
-        main hr{
-            border: 0;
-            background: #9c97f1;
-            height:1.2px;
-            margin: 80px 84px;
-        }
-
-        .left {
-            font-size: 1.5rem;
-            margin: 30px 0;
-        }
-
-        .firstSection {
-            display: flex;
-            justify-content: space-around;
-            margin: 150px 0;
-            align-items: center;
-        }
-
-        .firstSection > div {
-            width: 30%;
-        }
-
-        .leftSection {
-            font-size: 3rem;
-           
-        }
-
-        .rightSection img {
-            width:90%;
-        }
-        .purple{
-            color: rgb(188, 216, 110);
-        }
-        #element{
-            color: rgb(188, 216, 110);
-        }
-        .secondSection{
-            max-width: 80vw;
-            margin:auto;
-            height:80vh;
-        }
-        .secondSection{
-            font-size: 1.8rem;
-        }
-        .text-gray{
-            color: rgb(50, 49, 49);
-        }
-        .secondSection .box{
-            background: white;
-            width:80vw;
-            height:2px;
-            margin:56px 0;
-            display: flex;
-        }
-        .secondSection .vertical{
-            height:93px;
-            width: 1px;
-            background-color: white;
-            margin:0 100px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -131,33 +31,109 @@
 
     <main>
         <section class="firstSection">
-            <div class="leftSection">Hi, my name is<span class="purple"> Chathurya</span> 
-            <div>and I am a passionate</div>
-            <span id="element"></span>
+            <div class="leftSection">Hi, my name is<span class="purple"> Chathurya</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="button" onclick="window.location.href='Boppana Chathurya.pdf'">Download Resume</button>
+                    <button class="button"><a href="https://github.com/Chathuryab" target="_blank"> Visit
+                            Github</a></button>
+                    <button class="button"><a href="https://www.linkedin.com/in/boppana-chathurya-37270024b/" target="_blank">Visit Linkedin</a></button>
+                </div>
             </div>
             <div class="rightSection"><img src="image.png" alt=""></div>
         </section>
         <hr>
         <section class="secondSection">
             <span class="text-grey">What I have done so far</span>
-            <h1>Experience</h1>
+            <h1>My Projects</h1>
             <div class="box">
-                <div class="vertical"></div>
-                <div class="vertical"></div>
-                <div class="vertical"></div>
-                <div class="vertical"></div>
-
+                <div class="vertical">
+                    <img class="image-top" src="ev.png" alt="">
+                    <div class="vertical-title">
+                        Electric Vehicle Battery Safety Monitoring System
+                    </div>
+                    <div class="vertical-desc">
+                        The Electric Vehicle Battery Safety Monitoring System utilizes temperature and humidity sensors
+                        to detect potential hazards within the battery pack, providing real-time alerts to users in case
+                        of abnormal conditions.
+                    </div>
                 </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="story.png" alt="">
+                    <div class="vertical-title">
+                        Python Text-to-Speech Story Reader
+                    </div>
+                    <div class="vertical-desc">
+                        The Python Text-to-Speech Story Reader converts text to speech, offering customizable options
+                        for story genre and reading pace. Users select their preferred genre and adjust reading speed
+                        for a personalized experience.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="plant.png" alt="">
+                    <div class="vertical-title">
+                        Plant Health Monitoring System with IoT Integration
+                    </div>
+                    <div class="vertical-desc">
+                        The project employs gas, temperature, and humidity sensors to assess plant health by monitoring
+                        environmental conditions. Data collected is transmitted to ThingSpeak, facilitating remote
+                        monitoring and analysis. Demonstrating IoT integration expertise, the system ensures optimal
+                        plant care and promotes sustainable gardening practices.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="portfo.png" alt="">
+                    <div class="vertical-title">
+                        Portfolio Design Project
+                    </div>
+                    <div class="vertical-desc">
+                        My HTML/CSS Portfolio Design Project showcases my skills in web development through a sleek and
+                        professional portfolio website. Leveraging HTML and CSS, I have crafted a visually appealing and
+                        user-friendly platform to display my work, skills.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="rps.png" alt="">
+                    <div class="vertical-title">
+                        Rock,Paper,Scissors HTML, CSS, JS
+                    </div>
+                    <div class="vertical-desc">
+                        Allows users to play against the computer with randomly generated moves.
+                    </div>
+                </div>
+
+
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Chathurya's Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">Copyright &#169; Chahuryasportfolio.com|All rights reserved</div>
+    </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-          strings: ['Engineer','Web Developer','Python Developer','Java Developer'],
-          typeSpeed: 50,
+            strings: ['Engineer', 'Web Developer', 'Python Developer', 'Java Developer'],
+            typeSpeed: 50,
         });
-      </script>
+    </script>
 </body>
 
 </html>
